@@ -396,8 +396,13 @@ img {
   height: 44px;
   background-color: #000;
   border-radius: 50%;
-
  }
+
+ .social-link:hover,
+ .social-link:focus {
+  background-color: var(--accent-text) ;
+ }
+
  .social-icons li {
   flex-basis: calc(100% / 4);
  }
