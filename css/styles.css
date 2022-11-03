@@ -140,12 +140,13 @@ img {
 }
 
 .site-info a {
-  display: block;
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px
 }
 
 .site-info a {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -158,16 +159,10 @@ img {
     color: var(--accent-text);
 }
 
-
-.mail::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 12px;
+.icon-header {
   margin-right: 10px;
-  background-image: url(../images/mail-icon.png);
-  background-size: cover;
-  
+  fill: none;
+  stroke: currentColor
 }
 
 
@@ -237,6 +232,7 @@ img {
   background-color: var(--team-background);
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 4px;
 }
 
 .first-skill::before{
@@ -369,7 +365,8 @@ img {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    
+    margin-bottom: 0;
+
     margin-top: 10px;
     
    
@@ -377,39 +374,36 @@ img {
  }
  /* іконки для карток тіммейтів */
 
- .social-icons {
-  display: flex;
-  padding: 0 32px;
-  margin-top: 16px;
- }
 
- .icon {
+.social-ic-team { 
   justify-content: center;
   align-items: center;
-  fill: var(--icon-color);
- }
- .icon:hover {
-  fill: var(--background-and-text);
- }
- .social-link {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-ic-team li + li {
+  margin-left: 10px;
+}
+.social-ic-team button {
+  align-items: center;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1) ;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
-  background-color: #000;
-  border-radius: 50%;
- }
+  cursor: pointer;
+  fill: var(--icon-color);
+}
+.social-ic-team button:hover {
+  background-color: var(--accent-text);
+  fill: var(--background-and-text);
+}
 
- .social-link:hover,
- .social-link:focus {
-  background-color: var(--accent-text) ;
- }
+.icon-team {
+  align-items: center;
+}
 
- .social-icons li {
-  flex-basis: calc(100% / 4);
- }
- .social-icons li + li {
-  margin-left: 10px;
- }
- 
 /* Партнери компанії */
 .partners {
   padding-bottom: 94px;
