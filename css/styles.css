@@ -153,6 +153,7 @@ img {
     letter-spacing: 0.02em;
 
     color: var(--other-text);
+    fill: var(--other-text);
 }
 .site-info a:hover,
 .site-info a:focus {
