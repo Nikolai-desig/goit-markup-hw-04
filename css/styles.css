@@ -157,17 +157,11 @@ img {
 .site-info a:hover,
 .site-info a:focus {
     color: var(--accent-text);
+    fill: var(--accent-text);
 }
 
 .icon-header {
   margin-right: 10px;
-  fill: var(--other-text);
-  stroke: currentColor
-}
-
-.icon-header:hover {
-  fill: var(--accent-text);
-  stroke: currentColor;
 }
 
 
